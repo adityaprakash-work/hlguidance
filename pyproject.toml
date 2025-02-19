@@ -9,13 +9,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hlguidance"
 version = "0.1.0"
-description = "Add your description here"
+description = "A high-level abstraction over the Guidance framework, simplifying structured LLM interactions with enhanced control, templating, and execution flow."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
     {name = "Aditya Prakash", email = "adityaprakash.work@gmail.com"}
 ]
-dependencies = []
+dependencies = [
+    "guidance>=0.2.0",
+    "pydantic-settings>=2.7.1",
+]
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
